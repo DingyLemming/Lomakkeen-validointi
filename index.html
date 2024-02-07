@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröitymis lomake</title>
+    <link rel="stylesheet" href="style.css">
+  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+    <div class="title">Registeröinti</div>
+    <form id="registrationForm" action="#">
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Käyttäjä ID:</span>
+                <input type="text" name="Käyttäjä Id" placeholder="Pistä oma Käyttäjä ID">
+        </div>
+        <div class="input-box">
+            <span class="details">Salasana:</span>
+            <input type="password" name="Salasana" placeholder="Pistä Salasana">
+    </div>
+    <div class="input-box">
+        <span class="details">Koko Nimi:</span>
+        <input type="text" name="Koko nimi" placeholder="Pistä oma koko nimi">
+</div>
+<div class="input-box">
+    <span class="details">Osoite:</span>
+    <input type="text" name="Osoite" placeholder="Pistä osoite">
+</div>
+<div class="input-box">
+    <span class="details">Postinumero:</span>
+    <input type="text" name="postinumero" placeholder="Pistä Postinumeoa">
+</div>
+<div class="input-box">
+    <span class="details">Sähköposti:</span>
+    <input type="text" name="Sähköposti" placeholder="Pistä Sähköposti">
+</div>
+
+<div class="gender-details">
+    <input type="radio" name="gender" id="dot-1" value="male">
+    <input type="radio" name="gender" id="dot-2" value="female">
+    <span class="gender-title">Sukupuoli:</span>
+    <div class="category">
+        <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Mies</span>
+        </label>
+        <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Nainen</span>
+        </label>
+    </div>
+</div>
+<div class="kieli-details">
+    <input type="radio" name="kieli" id="piste-1" value="suomi">
+    <input type="radio" name="kieli" id="piste-2" value="muu">
+    <span class="kieli-title">Kieli:</span>
+    <div class="category">
+        <label for="piste-1">
+            <span class="piste one"></span>
+            <span class="kieli">Suomi</span>
+        </label>
+        <label for="piste-2">
+            <span class="piste two"></span>
+            <span class="kieli">Muu kuin suomi</span>
+        </label>
+    </div>
+</div>
+
+<div class="custom-select" style="width:100px;">
+    <span class="custom-box">Maa:</span>
+    <select name="country">
+        <option value="0">(Valitse maa)</option>
+        <option value="1">Suomi</option>
+        <option value="2">Ruotsi</option>
+        <option value="3">Joku muu maa</option>
+
+    </select>
+</div>
+<div class="button">
+    <input type="submit" value="Lähetä">
+</div>
+    </form>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>
